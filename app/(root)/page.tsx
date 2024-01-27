@@ -5,7 +5,6 @@ import ThreadCard from "@/components/cards/ThreadCard";
 export default async function Home() {
   const result = await fetchPosts(1, 30)
   const user = await currentUser()
-  console.log(result);
 
 
   return (
